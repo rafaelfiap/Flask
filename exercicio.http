@@ -1,0 +1,31 @@
+### Rota “Home” para exibir que a API está ativa.
+GET http://localhost:5000/
+Content-Type: application/json
+
+### Consultar todos os funcionários.
+GET http://localhost:5000/funcionarios
+Content-Type: application/json
+
+### Consultar um funcionário pelo nome.
+GET http://localhost:5000/funcionarios/ana
+Content-Type: application/json
+
+### Inserir um novo funcionário.
+POST http://localhost:5000/funcionarios
+Content-Type: application/json
+
+{
+    "id": 8,
+    "nome": "Carlos",
+    "idade": 32,
+    "salario": 3900.00
+}
+
+### Alterar os dados de um funcionário.
+PUT http://localhost:5000/funcionarios/Ana
+Content-Type: application/json
+
+{
+    "idade": 27,
+    "salario": 3600.00
+}

@@ -1,0 +1,13 @@
+### Inserir um novo funcionário.
+
+POST http://localhost:5000/funcionarios
+Content-Type: application/json
+
+{
+    "id": 8,
+    "nome": "Carlos",
+    "idade": 32,
+    "salario": 3900.00
+}
+
+###
